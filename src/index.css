@@ -1,0 +1,86 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600;700;800;900&family=Chakra+Petch:wght@500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+@layer base {
+  body {
+    background-color: #050505;
+    color: #ffffff;
+    font-family: 'Space Grotesk', sans-serif;
+    overflow-x: hidden;
+  }
+}
+
+.font-orbitron {
+  font-family: 'Orbitron', sans-serif;
+}
+
+.font-chakra {
+  font-family: 'Chakra Petch', sans-serif;
+}
+
+/* Outlined text effect for "portal" */
+.text-stroke-white {
+  -webkit-text-stroke: 1.8px #ffffff;
+  color: transparent;
+  paint-order: stroke fill;
+}
+
+.text-stroke-orange {
+  -webkit-text-stroke: 1.8px #ff5b00;
+  color: transparent;
+  paint-order: stroke fill;
+}
+
+/* Custom Chamfered Clip Paths */
+/* CTA Button chamfered corners: Top Right cut, Bottom Left cut */
+.clip-chamfer-cta {
+  clip-path: polygon(
+    0 0,
+    calc(100% - 18px) 0,
+    100% 18px,
+    100% 100%,
+    18px 100%,
+    0 calc(100% - 18px)
+  );
+}
+
+/* Top Nav Cart Button chamfered corners: Top Left cut, Bottom Right cut */
+.clip-chamfer-cart {
+  clip-path: polygon(
+    10px 0,
+    100% 0,
+    100% calc(100% - 10px),
+    calc(100% - 10px) 100%,
+    0 100%,
+    0 10px
+  );
+}
+
+/* Thumbnail Card chamfered corners */
+.clip-chamfer-card {
+  clip-path: polygon(
+    0 0,
+    calc(100% - 14px) 0,
+    100% 14px,
+    100% 100%,
+    14px 100%,
+    0 calc(100% - 14px)
+  );
+}
+
+/* Glowing background effects */
+.glow-orange-soft {
+  box-shadow: 0 0 35px rgba(255, 91, 0, 0.35);
+}
+
+.glow-orange-intense {
+  box-shadow: 0 0 50px rgba(255, 91, 0, 0.6);
+}
+
+/* Custom background grid pattern for sci-fi atmosphere */
+.bg-grid-pattern {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Infinite V Retail",
+  "description": "Futuristic VR headset retail hero section matching reference design.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
